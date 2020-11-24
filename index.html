@@ -7,25 +7,69 @@
 	<title>Let's drop this shit</title>
 	<meta charset="utf8">
 
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet"> 
+
+	<style>
+		h1, #clock, section, a {
+		    font-family: 'Teko', sans-serif;
+			font-size: 30px;
+			color: white;
+  			text-decoration: unset;
+		}
+
+		h1, a, .time {
+			color: yellow;
+		}
+		
+
+		body {
+			margin: 30px;
+			background-color: black;
+		}
+
+		section {
+			margin-top: 20px;
+		}
+
+		.ts {
+			color: #666;
+		}
+
+		#clock, h1 {
+			font-size: 50px;
+		}
+
+	</style>
+
 </head>
 
 
 <body>
 
-<div id="clockdiv">
+
+<h1>
+	Let's drop this shit!
+</h1>
+
+<section>
+	On the 22nd of November<br/> at 21PM CET in
+</section>
+
+<div id="clock">
    <div>
-      <span class="days"></span> <span>Days</span>
-   </div>
-   <div>
-      <span class="hours"></span> <span>Hours</span>
-   </div>
-   <div>
-      <span class="minutes"></span> <span>Mins</span>
-   </div>
-   <div>
-      <span class="seconds"></span> <span>Secs</span>
+      <span class="days time"></span> <span class="ts">Days</span>
+      <span class="hours time"></span> <span class="ts">Hours</span>
+      <span class="minutes time"></span> <span class="ts">Minutes</span>
+      <span class="seconds time"></span> <span class="ts">Seconds</span>
    </div>
 </div>
+
+<section>
+	and then <br/>I'll announce <br/>what's this all about<br/>
+	on <a href="https://www.instagram.com/joemoe/">instagram.com/joemoe</a> LIVE<br/>
+	Language will be german.
+</section>
 
 
 <script>
@@ -71,7 +115,7 @@ function initializeClock(id, endtime) {
 
 var deadline = new Date("2020-11-28T21:00:00.000+01:00");
 deadline.setDate(deadline.getDate());
-initializeClock('clockdiv', deadline);
+initializeClock('clock', deadline);
 </script>
 
 </body>
