@@ -7,43 +7,86 @@
 	<title>Let's drop this shit</title>
 	<meta charset="utf8">
 
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet"> 
-
 	<style>
-		h1, #clock, section, a, small, body {
-		    font-family: 'Teko', sans-serif;
-			font-size: 30px;
-			color: white;
-  			text-decoration: unset;
-		}
 
-		h1, a, .time {
-			color: yellow;
-		}
-		
+	/* "INSPIRED" BY https://codepen.io/Octavector/pen/RNgxpQ */
 
-		body {
-			margin: 30px;
-			background-color: black;
-		}
+	section {
+		margin: 20px;
+	}
+	body {  
+		background: black;
+		font-family: 'Oswald', sans-serif;
+		color: white;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
 
-		section {
-			margin-top: 20px;
-		}
+	a {
+		color: yellow;
+		text-decoration: none;
+	}
 
-		.ts {
-			color: #666;
-		}
+	h2, h3 {
+		color: yellow;
+	}
 
-		#clock, h1 {
-			font-size: 50px;
-		}
+	.ldts, #clock {
+		color: yellow;  
+		font-family: 'Oswald', sans-serif;
+		font-size: 5em;
+		line-height: 0.8;
+		margin: 0px;
+		margin-right: 40px;
+		padding: 0;
+		font-weight: bolder;
+  
+		-webkit-animation: anim 4s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-iteration-count:infinite;
+  
+		animation: anim 4s;
+		animation-timing-function: linear;
+		animation-iteration-count:infinite;
 
-		small, small a {
-			font-size: 15px;
-		}
+		text-transform: uppercase;
+	}
 
+	@-webkit-keyframes anim {
+		0%{text-shadow:-6px 4px 0px red;}
+		10% {text-shadow:4px -6px 0px green;}
+		20% {text-shadow:-9px 4px 0px blue;}
+		30% {text-shadow:4px -6px 0px yellow;}
+		40% {text-shadow:-8px 4px 0px orange;}
+		50% {text-shadow:4px 5px 0px purple;}
+		60% {text-shadow:-6px 4px 0px brown;}
+		70% {text-shadow:4px 7px 0px pink;}
+		80% {text-shadow:-9px -4px 0px lime;}
+		90% {text-shadow:4px -6px 0px cyan;}
+		100% {text-shadow:-9px 4px 0px teal;}
+	} 
+
+	@keyframes anim {
+		0%{text-shadow:-6px 4px 0px red;}
+		10% {text-shadow:4px -6px 0px green;}
+		20% {text-shadow:-9px 4px 0px blue;}
+		30% {text-shadow:4px -6px 0px yellow;}
+		40% {text-shadow:-8px 4px 0px orange;}
+		50% {text-shadow:4px 5px 0px purple;}
+		60% {text-shadow:-6px 4px 0px brown;}
+		70% {text-shadow:4px 7px 0px pink;}
+		80% {text-shadow:-9px -4px 0px lime;}
+		90% {text-shadow:4px -6px 0px cyan;}
+		100% {text-shadow:-9px 4px 0px teal;}
+	} 
+
+	.header {
+		display: flex;
+	}
+
+	i {
+		color: lime;
+	}
 	</style>
 
 </head>
@@ -52,30 +95,52 @@
 <body>
 
 
-<h1>
-	Let's drop this shit!
-</h1>
+<section class="header">
 
-<section>
-	On the 28th of November<br/> at 21pm CET in
-</section>
+<h1 class="ldts">
+	Let's<br>drop<br>this<br>shit!
+</h1>
 
 <div id="clock">
    <div>
-      <span class="days time"></span> <span class="ts">Days</span>
-      <span class="hours time"></span> <span class="ts">Hours</span>
-      <span class="minutes time"></span> <span class="ts">Minutes</span>
-      <span class="seconds time"></span> <span class="ts">Seconds</span>
+      <span class="days time"></span><span class="ts">T</span><br/>
+      <span class="hours time"></span><span class="ts">S</span><br/>
+      <span class="minutes time"></span><span class="ts">M</span><br/>
+      <span class="seconds time"></span><span class="ts">S</span>
    </div>
 </div>
 
-<section>
-	and then <br/>I'll announce <br/>what's this all about<br/>
-	on <a href="https://www.instagram.com/joemoe/">instagram.com/joemoe</a> LIVE<br/>
-	Language will be german.
 </section>
 
-<small>Follow <a href="https://twitter.com/joemoeAT">@joemoeAT</a> and <a href="https://www.instagram.com/joemoe/">@joemoe</a> to stay up to date of shit being dropped.</small>
+<section>
+	<h2>Let's &#9679; drop &#9679; this &#9679; shit!</h2>
+	<h3>Am 28. November um 21 Uhr</h3>
+	
+	OK, Ich hab da ein bisschen Erwartungen aufgebaut.<br/>
+	Jetzt geht es darum diese zu erfüllen.<br/>
+	Glaubt mir, ich verspüre den Druck.<br/>
+	Mittlerweile habe ich auch einen Plan,<br>
+	den werde ich an besagtem Abend auf <i>"Insta"</i> verkünden.<br/>
+	<a href="https://www.instagram.com/joemoe/">instagram.com/joemoe</a><br/>
+</section>
+<section>
+	Jedenfalls am <i>22. Dezember 21 Uhr</i> plus <i>45 Minten</i> frei halten.<br/>
+	Das wird a Gaudi.
+</section>
+<section>
+	<small>
+	
+		Auf Twitter <a href="https://twitter.com/joemoeAT">@joemoeAT</a> <br/>
+		und/oder auf Instagram<br/>
+		<a href="https://www.instagram.com/joemoe/">@joemoe</a> gibt es Updates dazu.
+
+	</small>
+</section>
+
+<section>
+	Euer Joey
+</section>
+
 
 <script>
 // "INSPIRED" by https://jsfiddle.net/solodev/hzshto8r/
@@ -105,7 +170,7 @@ function initializeClock(id, endtime) {
 	function updateClock() {
 		var t = getTimeRemaining(endtime);
 		if (t) {
-			daysSpan.innerHTML = t.days;
+			daysSpan.innerHTML = ('0' + t.days).slice(-2);
 			hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
 			minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
 			secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
